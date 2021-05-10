@@ -1,5 +1,8 @@
 pipeline {
   agent any
+	environment {
+	  PATH = '/home/jenkins/.local/bin:/home/jenkins/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/jenkins/apache-maven-3.8.1/bin:/home/jenkins/apache-ant-1.10.10/bin'
+	}
 
   stages {
     stage('Compile') {
